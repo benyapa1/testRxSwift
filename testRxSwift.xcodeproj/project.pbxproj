@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		274C39E6981221218101E6B8 /* Pods_testRxSwift_testRxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979D436D5F4F7D04528236B7 /* Pods_testRxSwift_testRxSwiftUITests.framework */; };
+		317EBB2325550BB200BFBB81 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317EBB2225550BB200BFBB81 /* TableViewCell.swift */; };
+		3199EC5825555B6E00B13CE8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3199EC5725555B6E00B13CE8 /* TableViewCell.xib */; };
 		31B28BFE253DA2B3002E046F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B28BFD253DA2B3002E046F /* Models.swift */; };
 		31C3253125270CAB000BDB2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C3253025270CAB000BDB2F /* AppDelegate.swift */; };
 		31C3253325270CAB000BDB2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C3253225270CAB000BDB2F /* SceneDelegate.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		1C2C5E712A2BC4D8638FB63A /* Pods-testRxSwift-testRxSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testRxSwift-testRxSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-testRxSwift-testRxSwiftUITests/Pods-testRxSwift-testRxSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		317EBB2225550BB200BFBB81 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3199EC5725555B6E00B13CE8 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		31B28BFD253DA2B3002E046F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		31C3252D25270CAB000BDB2F /* testRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C3253025270CAB000BDB2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				31C3253025270CAB000BDB2F /* AppDelegate.swift */,
 				31C3253225270CAB000BDB2F /* SceneDelegate.swift */,
 				31C3253425270CAB000BDB2F /* ViewController.swift */,
+				317EBB2225550BB200BFBB81 /* TableViewCell.swift */,
+				3199EC5725555B6E00B13CE8 /* TableViewCell.xib */,
 				31B28BFD253DA2B3002E046F /* Models.swift */,
 				31C3253625270CAB000BDB2F /* Main.storyboard */,
 				31C3253925270CAE000BDB2F /* Assets.xcassets */,
@@ -281,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31C3253D25270CAE000BDB2F /* LaunchScreen.storyboard in Resources */,
+				3199EC5825555B6E00B13CE8 /* TableViewCell.xib in Resources */,
 				31C3253A25270CAE000BDB2F /* Assets.xcassets in Resources */,
 				31C3253825270CAB000BDB2F /* Main.storyboard in Resources */,
 			);
@@ -410,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317EBB2325550BB200BFBB81 /* TableViewCell.swift in Sources */,
 				31C3253525270CAB000BDB2F /* ViewController.swift in Sources */,
 				31C3253125270CAB000BDB2F /* AppDelegate.swift in Sources */,
 				31C3253325270CAB000BDB2F /* SceneDelegate.swift in Sources */,

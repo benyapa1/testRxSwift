@@ -7,6 +7,7 @@ target 'testRxSwift' do
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
   pod 'Alamofire', '~> 5.2'
+  pod 'Kingfisher', '~> 5.0'
   # Pods for testRxSwift
 
   target 'testRxSwiftTests' do

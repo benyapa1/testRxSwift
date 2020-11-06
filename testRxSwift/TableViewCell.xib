@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="194" id="76a-Ae-0Wx" customClass="TableViewCell" customModule="testRxSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="76a-Ae-0Wx" id="1rP-Ye-Itb">
+                <rect key="frame" x="0.0" y="0.0" width="475" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ae0-RJ-rUs">
+                        <rect key="frame" x="0.0" y="0.0" width="475" height="123"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4e-zF-69i">
+                        <rect key="frame" x="8" y="131" width="439" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUa-n2-rqb">
+                        <rect key="frame" x="8" y="152" width="459" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxe-HH-D32">
+                        <rect key="frame" x="8" y="168" width="459" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ae0-RJ-rUs" firstAttribute="leading" secondItem="1rP-Ye-Itb" secondAttribute="leading" id="85E-ds-c41"/>
+                    <constraint firstItem="e4e-zF-69i" firstAttribute="top" secondItem="ae0-RJ-rUs" secondAttribute="bottom" constant="8" id="BT9-uC-VPe"/>
+                    <constraint firstItem="Pxe-HH-D32" firstAttribute="top" secondItem="GUa-n2-rqb" secondAttribute="bottom" id="DzC-z5-KMa"/>
+                    <constraint firstItem="ae0-RJ-rUs" firstAttribute="top" secondItem="1rP-Ye-Itb" secondAttribute="top" id="Q2x-dC-amf"/>
+                    <constraint firstItem="GUa-n2-rqb" firstAttribute="top" secondItem="e4e-zF-69i" secondAttribute="bottom" id="Vcb-Af-Oil"/>
+                    <constraint firstItem="GUa-n2-rqb" firstAttribute="leading" secondItem="1rP-Ye-Itb" secondAttribute="leading" constant="8" id="ZWB-er-Jz8"/>
+                    <constraint firstAttribute="trailing" secondItem="ae0-RJ-rUs" secondAttribute="trailing" id="h11-ct-E3p"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="e4e-zF-69i" secondAttribute="trailing" constant="8" id="hgp-up-NqU"/>
+                    <constraint firstItem="e4e-zF-69i" firstAttribute="leading" secondItem="1rP-Ye-Itb" secondAttribute="leading" constant="8" id="jY3-RG-oIq"/>
+                    <constraint firstItem="GUa-n2-rqb" firstAttribute="top" secondItem="e4e-zF-69i" secondAttribute="bottom" id="lLs-BO-Jny"/>
+                    <constraint firstAttribute="trailing" secondItem="Pxe-HH-D32" secondAttribute="trailing" constant="8" id="nJf-Yw-nNO"/>
+                    <constraint firstItem="Pxe-HH-D32" firstAttribute="leading" secondItem="1rP-Ye-Itb" secondAttribute="leading" constant="8" id="oYK-f6-BL0"/>
+                    <constraint firstAttribute="bottom" secondItem="Pxe-HH-D32" secondAttribute="bottom" constant="8" id="swX-gU-MVj"/>
+                    <constraint firstItem="Pxe-HH-D32" firstAttribute="top" secondItem="GUa-n2-rqb" secondAttribute="bottom" id="v4N-aQ-iRv"/>
+                    <constraint firstAttribute="trailing" secondItem="GUa-n2-rqb" secondAttribute="trailing" constant="8" id="xky-yy-PXC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateTimeLabel" destination="GUa-n2-rqb" id="ryq-S2-LLr"/>
+                <outlet property="descriptionLabel" destination="Pxe-HH-D32" id="UZg-3t-VhU"/>
+                <outlet property="imageCar" destination="ae0-RJ-rUs" id="l7H-Dq-yHf"/>
+                <outlet property="titleLabel" destination="e4e-zF-69i" id="yYf-gz-YjT"/>
+            </connections>
+            <point key="canvasLocation" x="-7.9710144927536239" y="123.88392857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

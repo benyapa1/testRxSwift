@@ -17,19 +17,28 @@ enum MyError: Error {
 class ViewController: UIViewController {
   
   private let url = "https://www.apphusetreach.no/application/119267/article/get_articles_list"
+  private var data: Content?
+  private var error: Error?
+  @IBOutlet weak var tableView: UITableView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    setupTableView()
     callingAPI()
+  }
+  
+  func setupTableView() {
+    tableView.register(UINib(nibName: TableViewCell.nibName, bundle: Bundle(for: TableViewCell.self)), forCellReuseIdentifier: TableViewCell.cellIdentifier)
   }
   
   func callingAPI() {
     let receiveDataResult = getData(url, parameters: nil)
-    _ = receiveDataResult.subscribe(onNext: { (value) in
-      print(value)
-    }, onError: { (error) in
-      print(error)
-    })
+    _ = receiveDataResult.subscribe(onNext: { [weak self] (value) in
+      self?.data = value
+      self?.tableView.reloadData()
+    }, onError: { [weak self] (error) in
+      self?.error = error
+      })
   }
   
   func getData(_ url: String, parameters: [String:String]?) -> Observable<Content> {
@@ -54,7 +63,21 @@ class ViewController: UIViewController {
       return Disposables.create()
     }
   }
+}
 
-
+extension ViewController: UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return data?.content.count ?? 0
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as? TableViewCell, let dataCell = data?.content[indexPath.row] else {
+      return UITableViewCell()
+    }
+    cell.updateUI(item: dataCell)
+    return cell
+  }
+  
+  
 }
 
